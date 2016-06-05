@@ -1,8 +1,7 @@
 # Lexis
 Lexis: An Optimization Framework for Discovering the Hierarchical Structure of Sequential Data
 
-This is the implementation of the Lexis framework presented in the paper: http://arxiv.org/abs/1602.05561
-The final version of the paper is referenced in [1]
+This is the implementation of the Lexis framework presented in the paper: http://arxiv.org/abs/1602.05561. The final version of the paper is referenced in [1]
 
 ## Requirements
 * The code uses a slightly modified (in terms of I/O) version of the suffix array library, proposed in [2].
@@ -33,6 +32,7 @@ The final version of the paper is referenced in [1]
     [-m]: consider each line of the input file as a separate target string
     [-l]: load a DAG file (will override -r -t -m options)
 ```
+The output of the code is the DAG adjacency list (or grammar) form of the generated DAG, plus the detailed log of the code. You can remove the log using ```-q``` option.
 
 ## References
 * [1] P. Siyari, B. Dilkina, C. Dovrolis. "Lexis: An Optimization Framework for Discovering the Hierarchical Structure of Sequential Data", in 22nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD), 2016.
