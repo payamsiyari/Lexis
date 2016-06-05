@@ -2,10 +2,11 @@
 Lexis: An Optimization Framework for Discovering the Hierarchical Structure of Sequential Data
 
 This is the implementation of the Lexis framework presented in the paper: http://arxiv.org/abs/1602.05561
+The final version of the paper is referenced in [1]
 
 ## Requirements
-* The code uses a slightly modified (in terms of I/O) version of the suffix array library, proposed in [1].
-* The code uses NetworkX package [2] for graph algorithms.
+* The code uses a slightly modified (in terms of I/O) version of the suffix array library, proposed in [2].
+* The code uses NetworkX package [3] for graph algorithms.
 
 ## Installation
 * Make sure to compile the code in repeats1 directory by simply running ```make```.
@@ -34,5 +35,6 @@ This is the implementation of the Lexis framework presented in the paper: http:/
 ```
 
 ## References
-* [1] M. Gallé. ''Searching for compact hierarchical structures in DNA by means of the Smallest Grammar Problem'', PhD thesis, Université Rennes 1, 2011.
-* [2] https://networkx.github.io
+* [1] P. Siyari, B. Dilkina, C. Dovrolis. "Lexis: An Optimization Framework for Discovering the Hierarchical Structure of Sequential Data", in 22nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD), 2016.
+* [2] M. Gallé. ''Searching for compact hierarchical structures in DNA by means of the Smallest Grammar Problem'', PhD thesis, Université Rennes 1, 2011.
+* [3] https://networkx.github.io
