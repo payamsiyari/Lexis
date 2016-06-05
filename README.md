@@ -12,7 +12,8 @@ This is the implementation of the Lexis framework presented in the paper: http:/
 * Make sure to install NetworkX by running ```pip install networkx```.
 
 ## Usage
-```./python Lexis.py [-t (c | i | s) | -p (i) | -q | -r (r | mr | lmr | smr) | -f (c | e) | -m | -l] <filename>
+```python
+./python Lexis.py [-t (c | i | s) | -p (i) | -q | -r (r | mr | lmr | smr) | -f (c | e) | -m | -l] <filename>
     [-t]: choosing between character sequence, integer sequence or space-separated sequence
         c - character sequence
         i - integer sequence
