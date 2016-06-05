@@ -1,7 +1,7 @@
 # Lexis
 Lexis: An Optimization Framework for Discovering the Hierarchical Structure of Sequential Data
 
-This is the implementation of the Lexis framework presented in the paper: http://arxiv.org/abs/1602.05561. The final version of the paper is referenced in [1]
+This is the implementation of the Lexis framework presented in the paper: http://arxiv.org/abs/1602.05561. The final version of the paper is referenced in [1].
 
 ## Requirements
 * The code uses a slightly modified (in terms of I/O) version of the suffix array library, proposed in [2].
