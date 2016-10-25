@@ -602,11 +602,17 @@ class DAG(object):
                     newContents += '\n'
             return (newContents.rstrip('\n'), letterDict)
         if charSeq == SequenceType.Integer:  # input is space seperated integers
-            for line in inputFile:
+            newContents = ''
+            dict = {}
+            for l in inputFile.read().splitlines():
+                line = l.split()
                 for i in range(len(line)):
-                    if line[i] not in set(range(9)) and line[i] != ' ':
+                    if not isinstance(int(line[i]), int) or line[i] == ' ':
                         raise ValueError('Input file is not in space-separated integer form.')
-            return (inputFile, {})
+                    else:
+                        dict[int(line[i])] = line[i]
+                newContents += l + '\n'
+            return (newContents.rstrip('\n'), dict)
         if charSeq == SequenceType.SpaceSeparated:  # input is space-seperated words
             wordDict = {}
             counterDict = {}
